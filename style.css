@@ -1,0 +1,198 @@
+/* style.css */
+
+/* Sticky footer setup */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('images/paramore bg.gif');
+  background-size: cover;
+  background-attachment: fixed; /* Keeps it static while scrolling */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* Optional: improves readability */
+}
+
+
+/* Make main content expand */
+main {
+  flex: 1;
+}
+
+/* General Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Card Styles */
+.card-login{
+  background: rgba(255, 255, 255, 0.2);  /* Semi-transparent white */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);          /* This is the blur effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Soft inner border */
+  color: #d47405;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.card-login:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+
+}
+.card-register {
+  background: rgba(255, 255, 255, 0.2);  /* Same semi-transparent white */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #d47405;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card-register:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Form Inputs */
+input.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary {
+  background-color: #fded0d;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #d7120b;
+}
+
+.btn-success {
+  background-color: #dceb0b;
+  border:none;
+}
+
+.btn-success:hover {
+  background-color: #d3240c;
+}
+
+/* Text Links */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Landing Page Card Rows */
+/* General styles */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Home Section */
+.home{
+  padding-top: 20px; /* Adjust this as needed */
+  text-align: center;
+  color: white;
+}
+.home h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.p{
+  font-size: 1.80rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  color: rgba(233, 9, 9, 0.918);
+}
+
+/* Button */
+.btn-custom {
+  background-color: #000000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+  color: rgb(255, 255, 255);
+}
+
+.btn-custom:hover {
+  background-color: rgba(239, 243, 9, 0.925);
+  text-decoration: none;
+  color: rgba(104, 4, 4, 0.986);
+}
+
+/* Card images */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 12px 12px 0 0;
+  border: 10px solid #ffffff00; /* Add white border inside the card */
+  box-sizing: border-box;    /* Makes border count within dimensions */
+}
+  .card-landing {
+  background: rgba(255, 255, 255, 0.075);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0);
+  font-family: 'Times New Roman', Times, serif;
+  color: rgba(211, 10, 10, 0.925);
+  padding: 1rem;
+}
+.card-landing:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+.card-text{
+ color: #181303;
+}
+.footer {
+  flex-shrink: 0;
+  padding: 0.2rem 0;         /* Very minimal vertical padding */
+  font-size: 1rem;        /* Small text for compactness */ 
+  line-height: 0;            /* Tight line spacing */
+}
+
+footer .container {
+  padding: 0;                /* Remove container padding */
+}
+
+footer {
+  min-height: 2rem;          /* Sets overall footer height (~32px) */
+}
